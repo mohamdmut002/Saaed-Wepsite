@@ -14,12 +14,11 @@
 <!-- ============ LANGUAGE GATE ============ -->
 <section id="gate">
   <div class="gate-mark">
-    <svg viewBox="0 0 24 24" fill="none" stroke="#eef1f3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 2 7l10 5 10-5-10-5Z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+    <img src="assets/logo.png" alt="SAAED Logo">
   </div>
-  <h1 class="gate-title">ساعد للأنظمة المرورية</h1>
   <h4 class="gate-title">ساحات الحجز المرورية</h4>
   <p class="gate-sub">اختر لغتك للمتابعة &nbsp;·&nbsp; <b>Choose your language</b> &nbsp;·&nbsp; اپنی زبان منتخب کریں</p>
-  <p class="gate-city">Abu Dhabi – Musaffah · ابوظبی – مصفح</p>
+  <p class="gate-city">أبوظبي – مصفح · Abu Dhabi – Musaffah · ابوظبی – مصفح</p>
 
   <div class="signs">
     <button class="sign-btn" data-lang="ar" onclick="selectLang('ar')">
@@ -47,17 +46,23 @@
   <header class="topbar">
     <div class="brand">
       <div class="dot">
-        <svg viewBox="0 0 24 24" fill="none" stroke="#eef1f3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 2 7l10 5 10-5-10-5Z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+        <img src="assets/logo.png" alt="SAAED Logo">
       </div>
       <div class="brand-name">
         <span data-i18n="brand"></span>
         <small data-i18n="tagline_small"></small>
       </div>
     </div>
-    <div class="lang-switch">
-      <button data-lang="ar" onclick="selectLang('ar')">AR</button>
-      <button data-lang="en" onclick="selectLang('en')">EN</button>
-      <button data-lang="ur" onclick="selectLang('ur')">UR</button>
+    <div class="header-actions">
+      <button class="back-btn" onclick="goBack()">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg>
+        <span data-i18n="back_btn"></span>
+      </button>
+      <div class="lang-switch">
+        <button data-lang="ar" onclick="selectLang('ar')">AR</button>
+        <button data-lang="en" onclick="selectLang('en')">EN</button>
+        <button data-lang="ur" onclick="selectLang('ur')">UR</button>
+      </div>
     </div>
   </header>
 
@@ -66,7 +71,10 @@
   <section class="hero">
     <h1 data-i18n="hero_title"></h1>
     <p data-i18n="hero_sub"></p>
-    <span class="addr" data-i18n="hero_addr"></span>
+    <span class="addr">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+      <span data-i18n="hero_addr"></span>
+    </span>
   </section>
 
   <main>
@@ -102,7 +110,7 @@
   <div class="lane-line"></div>
   <footer>
     <div data-i18n="footer_text"></div>
-    <div class="foot-addr" data-i18n="hero_addr"></div>
+    <div class="foot-addr" data-i18n="footer_addr"></div>
   </footer>
 </div>
 
