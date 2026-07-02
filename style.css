@@ -50,6 +50,7 @@ body.lang-en .display, body.lang-en h1, body.lang-en h2, body.lang-en h3{ font-f
 }
 .gate-mark svg{ width:38px; height:38px; }
 .gate-title{ font-size:clamp(28px,5vw,44px); font-weight:700; letter-spacing:.5px; margin:0 0 6px; }
+.gate-subtitle{ font-size:clamp(18px,3vw,24px); font-weight:500; color:var(--lane-dim);  margin:0 0 30px; }
 .gate-sub{ color:var(--lane-dim); font-size:15px; margin:0 0 8px; letter-spacing:.3px; }
 .gate-city{ color:var(--amber); font-size:13px; margin:0 0 34px; letter-spacing:.4px; }
 .gate-sub b{ color:var(--amber); font-weight:600; }
