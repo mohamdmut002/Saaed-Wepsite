@@ -52,7 +52,7 @@ const dict = {
     dir:'ltr',
     brand:'SAAED Traffic Systems',
     tagline_small:'ساعد للأنظمة المرورية',
-    hero_title:'Smart Services for Traffic Systems Management',
+    hero_title:'Saaed Traffic Systems | Traffic Impound Yards',
     hero_sub:'Everything you need in one place — the laws and documents required to collect your vehicle, along with the locations of all our yards.',
     hero_addr:'Abu Dhabi – Musaffah, United Arab Emirates',
     footer_addr:'SAAED – United Arab Emirates',
