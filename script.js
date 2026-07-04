@@ -41,8 +41,8 @@ const dict = {
         {name:'ساحة مصفح 4', note:'مصفح، أبوظبي', url:'https://maps.app.goo.gl/7BwiJdea3NnFX1jW7?g_st=iw'}
       ]},
       { title:'ساحات أخرى', yards:[
-        {name:'ساحة Q-Mobility', note:'أبوظبي', url:'https://maps.app.goo.gl/NEh2mXFF8irEhmTy5'},
-        {name:'ساحة المزادات -المفرق', note:'المفرق', url:'https://maps.app.goo.gl/YEy8NGRUSzhuXJ1P8'},
+        {name:'ساحة مواقف مصفح', note:'مصفح الكورنيش', url:'https://maps.app.goo.gl/NEh2mXFF8irEhmTy5'},
+        {name:'ساحة المزادات - المفرق', note:'المفرق', url:'https://maps.app.goo.gl/YEy8NGRUSzhuXJ1P8'},
         {name:'ساحة مواقف أبوظبي', note:'شارع المطار، أبوظبي', url:'https://share.google/NwoClNuG0s1ctQLwH'},
         {name:'ساحة العين', note:'العين', url:'https://maps.app.goo.gl/uceHfSMozPJHaQeP7?g_st=ic'}
       ]}
