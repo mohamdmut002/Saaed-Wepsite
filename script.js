@@ -80,7 +80,7 @@ const dict = {
       {t:'Some accepted documents:', sub:['Representative card','Trade license for company owners','Possession letter (if the vehicle is unregistered or has no plate)']},
       {t:'If the vehicle\u2019s impound period exceeds six months, it will be referred to public auction in accordance with the procedures approved by the Department of Transport.'},
       {t:'Example: if your fines total AED 8,000 and the vehicle sells at auction for AED 4,000, the remaining AED 4,000 stays registered against your name.', key:true},
-      {t:'The vehicle cannot be released without meeting one of the conditions above.', key:true}
+      {t:'The vehicle will be released to the owner or their legally authorized representative. The vehicle cannot be released unless one of the above requirements has been met.', key:true}
     ],
     yard_groups: [
       { title:'Musaffah Impound Yards', yards:[
@@ -129,7 +129,7 @@ const dict = {
       {t:'کچھ قابلِ قبول دستاویزات:', sub:['نمائندہ کارڈ','کمپنی مالکان کے لیے تجارتی لائسنس','قبضہ نامہ (اگر گاڑی غیر رجسٹرڈ ہے یا نمبر پلیٹ نہیں ہے)']},
       {t:'اگر گاڑی کے یارڈ میں رہنے کی مدت چھ مہینے سے تجاوز کر جائے تو اسے ڈیپارٹمنٹ آف ٹرانسپورٹ کے منظور شدہ طریقہ کار کے مطابق عوامی نیلامی کے لیے بھیج دیا جائے گا۔'},
       {t:'مثال: اگر جرمانوں کی رقم 8,000 درہم ہو اور گاڑی نیلامی میں 4,000 درہم میں فروخت ہو جائے تو باقی ماندہ 4,000 درہم اب بھی آپ کے نام درج رہیں گے۔', key:true},
-      {t:'مذکورہ بالا شرائط میں سے کسی ایک کو پورا کیے بغیر گاڑی حاصل نہیں کی جا سکتی۔', key:true}
+      {t:'گاڑی صرف مالک یا اس کے قانونی نمائندے کے حوالے کی جائے گی۔ مذکورہ بالا شرائط میں سے کم از کم ایک شرط پوری کیے بغیر گاڑی وصول نہیں کی جا سکتی۔', key:true}
     ],
     yard_groups: [
       { title:'مصفح یارڈز', yards:[
