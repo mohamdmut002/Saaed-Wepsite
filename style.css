@@ -81,6 +81,27 @@ body.lang-en .display, body.lang-en h1, body.lang-en h2, body.lang-en h3{ font-f
 }
 .gate-hours svg{ width:16px; height:16px; flex:none; }
 
+.survey-link{
+  display:flex; align-items:center; gap:14px;
+  margin-top:22px; width:min(480px,90vw);
+  background:linear-gradient(180deg,var(--asphalt-3),var(--asphalt-2));
+  border:1px solid #333b42; border-radius:12px;
+  padding:14px 16px; text-decoration:none; color:var(--lane);
+  transition:border-color .18s ease, transform .18s ease;
+}
+.survey-link:hover{ border-color:var(--amber); transform:translateY(-2px); }
+.survey-icon{
+  flex:none; width:38px; height:38px; border-radius:9px;
+  background:rgba(245,166,35,.12); border:1px solid rgba(245,166,35,.4); color:var(--amber);
+  display:flex; align-items:center; justify-content:center;
+}
+.survey-icon svg{ width:19px; height:19px; }
+.survey-text{ flex:1; display:flex; flex-direction:column; gap:2px; text-align:start; }
+.survey-line{ font-size:12.5px; color:var(--lane-dim); line-height:1.5; }
+.survey-line:first-child{ color:var(--lane); font-weight:700; font-size:13.5px; }
+.survey-arrow{ flex:none; width:16px; height:16px; color:var(--lane-dim); }
+[dir="rtl"] .survey-arrow{ transform:scaleX(-1); }
+
 /* ============ MAIN SITE ============ */
 #site{ display:none; min-height:100vh; }
 header.topbar{
@@ -204,28 +225,3 @@ footer .foot-addr{ margin-top:4px; }
 }
 
 [data-i18n]{ transition:opacity .12s ease; }
-
-
-/* ============ survey Button down here ============ */
-
-.survey-link{
-  display:flex; align-items:center; gap:14px;
-  margin-top:22px; width:min(480px,90vw);
-  background:linear-gradient(180deg,var(--asphalt-3),var(--asphalt-2));
-  border:1px solid #333b42; border-radius:12px;
-  padding:14px 16px; text-decoration:none; color:var(--lane);
-  transition:border-color .18s ease, transform .18s ease;
-}
-.survey-link:hover{ border-color:var(--amber); transform:translateY(-2px); }
-.survey-icon{
-  flex:none; width:38px; height:38px; border-radius:9px;
-  background:rgba(245,166,35,.12); border:1px solid rgba(245,166,35,.4); color:var(--amber);
-  display:flex; align-items:center; justify-content:center;
-}
-.survey-icon svg{ width:19px; height:19px; }
-.survey-text{ flex:1; display:flex; flex-direction:column; gap:2px; text-align:start; }
-.survey-line{ font-size:12.5px; color:var(--lane-dim); line-height:1.5; }
-.survey-line:first-child{ color:var(--lane); font-weight:700; font-size:13.5px; }
-.survey-arrow{ flex:none; width:16px; height:16px; color:var(--lane-dim); }
-[dir="rtl"] .survey-arrow{ transform:scaleX(-1); }
-
