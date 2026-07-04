@@ -3,19 +3,19 @@ const dict = {
     dir:'rtl',
     brand:'ساعد للأنظمة المرورية',
     tagline_small:'SAAED Traffic Systems',
-    hero_title:'ساعد للأنظمة المرورية | ساحات الحجز',
+    hero_title:'خدمات ذكية لإدارة الأنظمة المرورية',
     hero_sub:'كل ما تحتاجه لاستلام مركبتك في مكان واحد، من القوانين والوثائق المطلوبة إلى مواقع جميع الساحات التابعة لنا.',
     hero_addr:'أبوظبي – مصفح، الإمارات العربية المتحدة',
     footer_addr:'ساعد – الإمارات العربية المتحدة',
     laws_title:'المتطلبات والوثائق',
     laws_desc:'اقرأ الشروط التالية جيدًا قبل الحضور لاستلام مركبتك.',
-    yards_title:'مواقع ساحات الحجز',
+    yards_title:'مواقع ساحات الحجز – ساعد والنقل المتكامل',
     yards_desc:'اختر الساحة على الخريطة قبل الحضور.',
     modal_title:'نموذج تفويض',
     modal_note:'هذا مثال توضيحي فقط لشكل خطاب التفويض/عدم الممانعة المطلوب. استبدل البيانات ببيانات مركبتك الفعلية.',
     modal_close:'إغلاق',
     back_btn:'رجوع',
-    footer_text:'© ساعد للأنظمة . جميع الحقوق محفوظة.',
+    footer_text:'© ساعد للأنظمة المرورية. جميع الحقوق محفوظة.',
     laws: [
       {t:'إذا كانت المركبة شخصية، يجب الحضور لساحات الحجز وتقديم المستندات التالية:',
         sub:['صورة من بطاقة الهوية أو رخصة القيادة لمالك المركبة المحجوزة','ملكية المركبة (المُلكية)']},
@@ -26,24 +26,25 @@ const dict = {
       {t:'إذا لم يكن لديك تفويض أو عدم ممانعة، يجب على صاحب المركبة الحضور بنفسه لاستلامها.'},
       {t:'يجب دفع رسوم الحجز المالية المحتسبة من ساعد، بالإضافة إلى جميع غرامات المواقف.'},
       {t:'يتم احتساب 100 درهم يوميًا خلال الشهر الأول من تاريخ حجز المركبة، ثم 500 درهم عن كل شهر لاحق حتى فك الحجز أو بيع المركبة في المزاد العلني.', key:true},
-      {t:'إذا كان لديك بطاقة مندوب، يمكنك استلام المركبة إذا كنت مندوبًا لدى الشركة نفسها المسجلة باسمها المركبة.'},
+      {t:'إذا كان لديك بطاقة مندوب، يمكنك استلام السيارة إذا كنت مندوبًا لدى الشركة نفسها المسجلة باسمها المركبة.'},
       {t:'سيتم إرسال رابط دفع للعميل من قبل موظف ساعد لسداد رسوم الحجز المحتسبة، بينما تُسدد مخالفات المواقف عبر تطبيق تم أو تطبيق درب عبر الرمز المروري.', key:true},
       {t:'بعض الوثائق المقبولة:', sub:['بطاقة مندوب','رخصة تجارية لأصحاب الشركات','رسالة حيازة (في حال كانت السيارة بدون رقم أو غير مسجّلة)']},
       {t:'في حال تجاوزت مدة حجز المركبة ستة أشهر، تُحال إلى المزاد العلني وفقًا للإجراءات المعتمدة من دائرة النقل.'},
       {t:'مثال توضيحي: إذا كان مبلغ المخالفات 8,000 درهم، وبيعت السيارة في المزاد بمبلغ 4,000 درهم، فإن المبلغ المتبقي من المخالفات (4,000 درهم) يبقى مسجّلًا باسمك.', key:true},
-      {t:'يتم تسليم المركبة للمالك او من يمثله قانونا, ولا يمكن استلام المركبة دون استيفاء أحد الشروط السابقة.', key:true}
+      {t:'لا يمكن استلام المركبة دون استيفاء أحد الشروط السابقة.', key:true}
     ],
     yard_groups: [
       { title:'ساحات حجز مصفح', yards:[
         {name:'ساحة مصفح 1', note:'مصفح، أبوظبي', url:'https://maps.app.goo.gl/jaLw2bjQwqJUJdaYA'},
         {name:'ساحة مصفح 2', note:'مصفح، أبوظبي', url:'https://maps.app.goo.gl/xLbBKhEmSJYooJV1A'},
-        {name:'ساحة مصفح 3', note:'مصفح، أبوظبي', url:'https://maps.app.goo.gl/dA1u3KTV2PUAcQNHA'}
+        {name:'ساحة مصفح 3', note:'مصفح، أبوظبي', url:'https://maps.app.goo.gl/dA1u3KTV2PUAcQNHA'},
+        {name:'ساحة مصفح 4', note:'مصفح، أبوظبي', url:'https://maps.app.goo.gl/7BwiJdea3NnFX1jW7?g_st=iw'}
       ]},
       { title:'ساحات أخرى', yards:[
         {name:'ساحة Q-Mobility', note:'أبوظبي', url:'https://maps.app.goo.gl/NEh2mXFF8irEhmTy5'},
-        {name:'ساحة المفرق المزادات', note:'المفرق، أبوظبي', url:'https://maps.app.goo.gl/YEy8NGRUSzhuXJ1P8'},
-        {name:'ساحة حجز المركبات المرور المفرق', note:'المفرق، أبوظبي', url:'https://maps.app.goo.gl/w9hhe1DnJRqNco9T7'},
-        {name:'ساحة حجز المركبات بني ياس', note:'بني ياس، أبوظبي', url:'https://maps.app.goo.gl/UNrDciQ9cK5HDsNo8'}
+        {name:'ساحة المزادات -المفرق', note:'المفرق', url:'https://maps.app.goo.gl/YEy8NGRUSzhuXJ1P8'},
+        {name:'ساحة مواقف أبوظبي', note:'شارع المطار، أبوظبي', url:'https://share.google/NwoClNuG0s1ctQLwH'},
+        {name:'ساحة العين', note:'العين', url:'https://maps.app.goo.gl/uceHfSMozPJHaQeP7?g_st=ic'}
       ]}
     ],
     map_btn:'فتح في خرائط جوجل'
@@ -52,13 +53,13 @@ const dict = {
     dir:'ltr',
     brand:'SAAED Traffic Systems',
     tagline_small:'ساعد للأنظمة المرورية',
-    hero_title:'SAAED Traffic Systems | Impound Yards',
+    hero_title:'Smart Services for Traffic Systems Management',
     hero_sub:'Everything you need in one place — the laws and documents required to collect your vehicle, along with the locations of all our yards.',
     hero_addr:'Abu Dhabi – Musaffah, United Arab Emirates',
     footer_addr:'SAAED – United Arab Emirates',
     laws_title:'Requirements & Documents',
     laws_desc:'Please read the following terms carefully before coming to collect your vehicle.',
-    yards_title:'Impound Yard Locations',
+    yards_title:'Impound Yard Locations – SAAED Integrated Transport',
     yards_desc:'Pick the yard on the map before you head over.',
     modal_title:'Sample Authorization Letter',
     modal_note:'This is only an illustrative example of the required authorization / no-objection letter format. Replace the details with your own vehicle\u2019s information.',
@@ -80,19 +81,20 @@ const dict = {
       {t:'Some accepted documents:', sub:['Representative card','Trade license for company owners','Possession letter (if the vehicle is unregistered or has no plate)']},
       {t:'If the vehicle\u2019s impound period exceeds six months, it will be referred to public auction in accordance with the procedures approved by the Department of Transport.'},
       {t:'Example: if your fines total AED 8,000 and the vehicle sells at auction for AED 4,000, the remaining AED 4,000 stays registered against your name.', key:true},
-      {t:'The vehicle will be released to the owner or their legally authorized representative. The vehicle cannot be released unless one of the above requirements has been met.', key:true}
+      {t:'The vehicle cannot be released without meeting one of the conditions above.', key:true}
     ],
     yard_groups: [
       { title:'Musaffah Impound Yards', yards:[
         {name:'Musaffah Yard 1', note:'Musaffah, Abu Dhabi', url:'https://maps.app.goo.gl/jaLw2bjQwqJUJdaYA'},
         {name:'Musaffah Yard 2', note:'Musaffah, Abu Dhabi', url:'https://maps.app.goo.gl/xLbBKhEmSJYooJV1A'},
-        {name:'Musaffah Yard 3', note:'Musaffah, Abu Dhabi', url:'https://maps.app.goo.gl/dA1u3KTV2PUAcQNHA'}
+        {name:'Musaffah Yard 3', note:'Musaffah, Abu Dhabi', url:'https://maps.app.goo.gl/dA1u3KTV2PUAcQNHA'},
+        {name:'Musaffah Yard 4', note:'Musaffah, Abu Dhabi', url:'https://maps.app.goo.gl/7BwiJdea3NnFX1jW7?g_st=iw'}
       ]},
       { title:'Other Yards', yards:[
         {name:'Q-Mobility Yard', note:'Abu Dhabi', url:'https://maps.app.goo.gl/NEh2mXFF8irEhmTy5'},
-        {name:'Al Mafraq Auctions Yard', note:'Al Mafraq, Abu Dhabi', url:'https://maps.app.goo.gl/YEy8NGRUSzhuXJ1P8'},
-        {name:'Al Mafraq Traffic Vehicle Impound Yard', note:'Al Mafraq, Abu Dhabi', url:'https://maps.app.goo.gl/w9hhe1DnJRqNco9T7'},
-        {name:'Bani Yas Vehicle Impound Yard', note:'Bani Yas, Abu Dhabi', url:'https://maps.app.goo.gl/UNrDciQ9cK5HDsNo8'}
+        {name:'Auctions Yard – Al Mafraq', note:'Al Mafraq', url:'https://maps.app.goo.gl/YEy8NGRUSzhuXJ1P8'},
+        {name:'Abu Dhabi Parking Yard', note:'Airport Road, Abu Dhabi', url:'https://share.google/NwoClNuG0s1ctQLwH'},
+        {name:'Al Ain Yard', note:'Al Ain', url:'https://maps.app.goo.gl/uceHfSMozPJHaQeP7?g_st=ic'}
       ]}
     ],
     map_btn:'Open in Google Maps'
@@ -101,13 +103,13 @@ const dict = {
     dir:'rtl',
     brand:'ساعد ٹریفک سسٹمز',
     tagline_small:'SAAED Traffic Systems',
-    hero_title:'سائد ٹریفک سسٹمز | ٹریفک امپاؤنڈ یارڈز',
+    hero_title:'ٹریفک نظام کے انتظام کے لیے ذہین خدمات',
     hero_sub:'اپنی گاڑی وصول کرنے کے لیے درکار ہر چیز ایک ہی جگہ — قوانین اور مطلوبہ دستاویزات سے لے کر ہمارے تمام یارڈز کے مقامات تک۔',
     hero_addr:'ابوظبی – مصفح، متحدہ عرب امارات',
     footer_addr:'ساعد – متحدہ عرب امارات',
     laws_title:'تقاضے اور دستاویزات',
     laws_desc:'گاڑی وصول کرنے کے لیے آنے سے پہلے درج ذیل شرائط بغور پڑھ لیں۔',
-    yards_title:'یارڈز کے مقامات',
+    yards_title:'یارڈز کے مقامات – ساعد مربوط ٹرانسپورٹ',
     yards_desc:'آنے سے پہلے نقشے پر یارڈ منتخب کریں۔',
     modal_title:'تفویض نامے کا نمونہ',
     modal_note:'یہ صرف مطلوبہ تفویض نامے / عدم اعتراض خط کی شکل کی مثال ہے۔ تفصیلات کو اپنی گاڑی کی اصل معلومات سے تبدیل کریں۔',
@@ -129,19 +131,20 @@ const dict = {
       {t:'کچھ قابلِ قبول دستاویزات:', sub:['نمائندہ کارڈ','کمپنی مالکان کے لیے تجارتی لائسنس','قبضہ نامہ (اگر گاڑی غیر رجسٹرڈ ہے یا نمبر پلیٹ نہیں ہے)']},
       {t:'اگر گاڑی کے یارڈ میں رہنے کی مدت چھ مہینے سے تجاوز کر جائے تو اسے ڈیپارٹمنٹ آف ٹرانسپورٹ کے منظور شدہ طریقہ کار کے مطابق عوامی نیلامی کے لیے بھیج دیا جائے گا۔'},
       {t:'مثال: اگر جرمانوں کی رقم 8,000 درہم ہو اور گاڑی نیلامی میں 4,000 درہم میں فروخت ہو جائے تو باقی ماندہ 4,000 درہم اب بھی آپ کے نام درج رہیں گے۔', key:true},
-      {t:'گاڑی صرف مالک یا اس کے قانونی نمائندے کے حوالے کی جائے گی۔ مذکورہ بالا شرائط میں سے کم از کم ایک شرط پوری کیے بغیر گاڑی وصول نہیں کی جا سکتی۔', key:true}
+      {t:'مذکورہ بالا شرائط میں سے کسی ایک کو پورا کیے بغیر گاڑی حاصل نہیں کی جا سکتی۔', key:true}
     ],
     yard_groups: [
       { title:'مصفح یارڈز', yards:[
         {name:'مصفح یارڈ 1', note:'مصفح، ابوظبی', url:'https://maps.app.goo.gl/jaLw2bjQwqJUJdaYA'},
         {name:'مصفح یارڈ 2', note:'مصفح، ابوظبی', url:'https://maps.app.goo.gl/xLbBKhEmSJYooJV1A'},
-        {name:'مصفح یارڈ 3', note:'مصفح، ابوظبی', url:'https://maps.app.goo.gl/dA1u3KTV2PUAcQNHA'}
+        {name:'مصفح یارڈ 3', note:'مصفح، ابوظبی', url:'https://maps.app.goo.gl/dA1u3KTV2PUAcQNHA'},
+        {name:'مصفح یارڈ 4', note:'مصفح، ابوظبی', url:'https://maps.app.goo.gl/7BwiJdea3NnFX1jW7?g_st=iw'}
       ]},
       { title:'دیگر یارڈز', yards:[
         {name:'Q-Mobility یارڈ', note:'ابوظبی', url:'https://maps.app.goo.gl/NEh2mXFF8irEhmTy5'},
-        {name:'المفرق نیلامی یارڈ', note:'المفرق، ابوظبی', url:'https://maps.app.goo.gl/YEy8NGRUSzhuXJ1P8'},
-        {name:'المفرق ٹریفک وہیکل امپاؤنڈ یارڈ', note:'المفرق، ابوظبی', url:'https://maps.app.goo.gl/w9hhe1DnJRqNco9T7'},
-        {name:'بنی یاس وہیکل امپاؤنڈ یارڈ', note:'بنی یاس، ابوظبی', url:'https://maps.app.goo.gl/UNrDciQ9cK5HDsNo8'}
+        {name:'نیلامی یارڈ - المفرق', note:'المفرق', url:'https://maps.app.goo.gl/YEy8NGRUSzhuXJ1P8'},
+        {name:'ابوظبی پارکنگ یارڈ', note:'ایئرپورٹ روڈ، ابوظبی', url:'https://share.google/NwoClNuG0s1ctQLwH'},
+        {name:'العین یارڈ', note:'العین', url:'https://maps.app.goo.gl/uceHfSMozPJHaQeP7?g_st=ic'}
       ]}
     ],
     map_btn:'گوگل میپس میں کھولیں'
