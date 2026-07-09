@@ -13,9 +13,15 @@
 
 <!-- ============ LANGUAGE GATE ============ -->
 <section id="gate">
-  <div class="gate-mark">
-    <img src="assets/logo.png" alt="SAAED Logo">
+  <div class="gate-marks">
+    <div class="gate-mark">
+      <img src="assets/logo.png" alt="SAAED Logo">
+    </div>
+    <div class="gate-mark">
+      <img src="assets/ad-mobility-logo.png" alt="Abu Dhabi Mobility Logo">
+    </div>
   </div>
+  <p class="gate-partner">بالشراكة مع دائرة النقل بأبوظبي &nbsp;·&nbsp; In partnership with Abu Dhabi Mobility &nbsp;·&nbsp; ابوظبی موبیلٹی کے تعاون سے</p>
   <h4 class="gate-title">ساعد للأنظمة المرورية | ساحات الحجز</h4>
   <p class="gate-sub">اختر لغتك للمتابعة &nbsp;·&nbsp; <b>Choose your language</b> &nbsp;·&nbsp; اپنی زبان منتخب کریں</p>
   <p class="gate-city">أبوظبي – مصفح · Abu Dhabi – Musaffah · ابوظبی – مصفح</p>
@@ -131,12 +137,12 @@
   </footer>
 </div>
 
-<!-- ============ SAMPLE AUTHORIZATION MODAL ============ -->
+<!-- ============ SAMPLE DOCUMENT MODAL ============ -->
 <div id="modal-overlay" onclick="if(event.target===this) closeModal()">
   <div class="modal-box">
-    <img src="images/authorization-sample.png" alt="Sample authorization letter">
-    <h4 data-i18n="modal_title"></h4>
-    <p class="modal-note" data-i18n="modal_note"></p>
+    <img id="modal-img" src="images/authorization-sample.png" alt="Sample document">
+    <h4 id="modal-title"></h4>
+    <p class="modal-note" id="modal-note"></p>
     <button class="modal-close" onclick="closeModal()" data-i18n="modal_close"></button>
   </div>
 </div>

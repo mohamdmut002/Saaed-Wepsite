@@ -16,22 +16,48 @@ const dict = {
     modal_close:'إغلاق',
     back_btn:'رجوع',
     footer_text:'© ساعد للأنظمة . جميع الحقوق محفوظة.',
+    samples:{
+      authorization:{ title:'نموذج تفويض', note:'هذا مثال توضيحي فقط لشكل خطاب التفويض/رسالة عدم ممانعة المطلوب. استبدل البيانات ببياناتك وبيانات مركبتك الفعلية.', src:'images/authorization-sample.png' },
+      traffic_code:{ title:'نموذج براءة ذمة - الرمز المروري', note:'هذا مثال توضيحي فقط لشكل شهادة براءة الذمة الخاصة بالرمز المروري. استبدل البيانات ببياناتك وبيانات مركبتك الفعلية.', src:'images/clearance-traffic-code.png' },
+      violations:{ title:'نموذج براءة ذمة - مخالفات المركبة', note:'هذا مثال توضيحي فقط لشكل شهادة براءة الذمة الخاصة بمخالفات المركبة. استبدل البيانات ببياناتك وبيانات مركبتك الفعلية.', src:'images/clearance-violations.png' },
+      release_order:{ title:'نموذج أمر فك حجز من مركز الشرطة', note:'هذا مثال توضيحي فقط لشكل أمر فك الحجز الصادر من مركز الشرطة. استبدل البيانات ببياناتك وبيانات مركبتك الفعلية.', src:'images/police-release-order.jpeg' },
+      taqa:{ title:'نموذج براءة ذمة - شركة طاقة للتوزيع', note:'هذا مثال توضيحي فقط لشكل خطاب براءة الذمة الصادر من شركة طاقة للتوزيع. استبدل البيانات ببياناتك وبيانات مركبتك الفعلية.', src:'images/clearance-taqa.jpeg' }
+    },
     laws: [
-      {t:'إذا كانت المركبة شخصية، يجب الحضور لساحات الحجز وتقديم المستندات التالية:',
-        sub:['صورة من بطاقة الهوية أو رخصة القيادة لمالك المركبة المحجوزة','ملكية المركبة (المُلكية)']},
-      {t:'إذا كانت المركبة باسم شخص آخر أو جهة، يجب إحضار تفويض قانوني لاستلام المركبة.'},
+      {t:'الأوراق والمستندات المطلوبة لاستلام المركبات:',
+        sub:[
+          'حضور مالك المركبة',
+          'إذا كانت المركبة مسجلة باسم شخص (المالك فرد)، صورة من بطاقة الهوية أو رخصة القيادة لمالك المركبة المحجوزة',
+          'إذا كان المراجع ليس المالك، يجب إحضار توكيل رسمي معتمد أو تفويض إذا كانت المركبة باسم شركة لاستلام المركبة',
+          'ملكية المركبة أو شطب الحيازة'
+        ]},
       {t:'يجب أن يكون التفويض رسميًا من صاحب المركبة، وأن يتضمن البيانات التالية:', key:true,
         sub:['الاسم','رقم الهوية','رقم المركبة','رقم الشاصي (VIN) للمركبة'],
         sample:'اضغط هنا لرؤية مثال'},
       {t:'إذا لم يكن لديك تفويض أو رسالة عدم ممانعة، يجب على صاحب المركبة الحضور بنفسه لاستلامها.'},
-      {t:'يجب دفع رسوم الحجز المالية المحتسبة من قبل ساعد، بالإضافة إلى جميع غرامات المواقف.'},
-      {t:'يتم احتساب 100 درهم يوميًا خلال الشهر الأول من تاريخ حجز المركبة، ثم 500 درهم عن كل شهر لاحق حتى فك الحجز أو بيع المركبة في المزاد العلني.', key:true},
-      {t:'إذا كان لديك بطاقة مندوب، يمكنك استلام المركبة إذا كنت مندوبًا لدى الشركة نفسها المسجلة باسمها المركبة.'},
-      {t:'سيتم إرسال رابط دفع للعميل من قبل موظف ساعد لسداد رسوم الحجز المحتسبة، بينما تُسدد مخالفات المواقف عبر تطبيق تم أو تطبيق درب عبر الرمز المروري.', key:true},
-      {t:'بعض الوثائق المقبولة:', sub:['بطاقة مندوب','رخصة تجارية لأصحاب الشركات','رسالة حيازة (في حال كانت السيارة بدون رقم أو غير مسجّلة)']},
-      {t:'في حال تجاوزت مدة حجز المركبة ستة أشهر، تُحال إلى المزاد العلني وفقًا للإجراءات المعتمدة من دائرة النقل.'},
-      {t:'مثال توضيحي في حال احالت المركبة الى المزاد العلني: إذا كان مبلغ المخالفات 8,000 درهم، وبيعت السيارة في المزاد بمبلغ 4,000 درهم، فإن المبلغ المتبقي من المخالفات (4,000 درهم) يبقى مسجّلًا باسمك.', key:true},
-      {t:'يتم تسليم المركبة للمالك او من يمثله قانونا, ولا يمكن استلام المركبة دون استيفاء أحد الشروط السابقة.', key:true}
+      {t:'سيتم إرسال رابط دفع للعميل من قبل موظف ساعد لسداد رسوم الحجز ورسوم القطر المحتسبة.', key:true},
+      {t:'يجب دفع جميع مخالفات المواقف المسجلة على المركبة، ويتم تسديدها عبر تطبيق تم أو تطبيق درب.', key:true},
+      {t:'بعض الوثائق المطلوبة لاستلام المركبات المملوكة باسم شركة أو مؤسسة:', sub:['رخصة تجارية لأصحاب الشركات','رسالة حيازة (في حال كانت السيارة بدون رقم أو غير مسجّلة)']},
+      {t:'في حال تجاوزت مدة حجز المركبة ستة أشهر، تُحال إلى المزاد العلني وفقًا للإجراءات المعتمدة من مركز النقل المتكامل.'},
+      {t:'يتم تسليم المركبة للمالك او من يمثله قانونا, ولا يمكن استلام المركبة دون استيفاء أحد الشروط السابقة.', key:true},
+      {t:'أوراق ومستندات إضافية مطلوبة لاستلام المركبات التي توجد عليها قيود:', key:true,
+        groups:[
+          { label:'1. مخالفة تهريب ركاب (قرار لجنة تهريب الركاب)', sub:[
+            {t:'براءة ذمة على الرمز المروري (إذا كانت المركبة مملوكة لفرد)', sample:'traffic_code'},
+            {t:'براءة ذمة على المخالفات المركبة (إذا كانت المركبة مملوكة لشركة أو مؤسسة)', sample:'violations'},
+            {t:'أمر فك حجز من مركز الشرطة', sample:'release_order'}
+          ]},
+          { label:'2. صهاريج الديزل', sub:[
+            {t:'مراجعة مركز شرطة مصفح (الرائد علي الشامسي)'},
+            {t:'براءة ذمة على الرمز المروري (إذا كانت المركبة مملوكة لفرد)', sample:'traffic_code'},
+            {t:'براءة ذمة على المخالفات المركبة (إذا كانت المركبة مملوكة لشركة أو مؤسسة)', sample:'violations'}
+          ]},
+          { label:'3. صهاريج الماء', sub:[
+            {t:'براءة ذمة من شركة طاقة للتوزيع', sample:'taqa'},
+            {t:'براءة ذمة على الرمز المروري (إذا كانت المركبة مملوكة لفرد)', sample:'traffic_code'},
+            {t:'براءة ذمة على المخالفات المركبة (إذا كانت المركبة مملوكة لشركة أو مؤسسة)', sample:'violations'}
+          ]}
+        ]}
     ],
     yard_groups: [
       { title:'ساحات حجز مصفح', yards:[
@@ -66,22 +92,48 @@ const dict = {
     modal_close:'Close',
     back_btn:'Back',
     footer_text:'© SAAED Traffic Systems. All rights reserved.',
+    samples:{
+      authorization:{ title:'Sample Authorization Letter', note:'This is only an illustrative example of the required authorization / no-objection letter format. Replace the details with your own vehicle\u2019s information.', src:'images/authorization-sample.png' },
+      traffic_code:{ title:'Sample Traffic Code Clearance', note:'This is only an illustrative example of the traffic code clearance certificate. Replace the details with your own vehicle\u2019s information.', src:'images/clearance-traffic-code.png' },
+      violations:{ title:'Sample Vehicle Violations Clearance', note:'This is only an illustrative example of the vehicle violations clearance certificate. Replace the details with your own vehicle\u2019s information.', src:'images/clearance-violations.png' },
+      release_order:{ title:'Sample Police Station Release Order', note:'This is only an illustrative example of a release order issued by a police station. Replace the details with your own vehicle\u2019s information.', src:'images/police-release-order.jpeg' },
+      taqa:{ title:'Sample TAQA Distribution Clearance', note:'This is only an illustrative example of a clearance letter issued by TAQA Distribution. Replace the details with your own vehicle\u2019s information.', src:'images/clearance-taqa.jpeg' }
+    },
     laws: [
-      {t:'If the vehicle is personal (registered under an individual), you must come to the impound yard and submit the following documents:',
-        sub:['A copy of the Emirates ID or driving license of the impounded vehicle\u2019s registered owner','The vehicle\u2019s registration card (Mulkiya)']},
-      {t:'If the vehicle is registered under someone else\u2019s name or an entity, you must bring a legal authorization to collect the vehicle.'},
+      {t:'Documents required to collect a vehicle:',
+        sub:[
+          'The vehicle owner must be present',
+          'If the vehicle is registered under an individual (the owner is a person), a copy of the Emirates ID or driving license of the impounded vehicle\u2019s registered owner',
+          'If the person collecting the vehicle is not the owner, an official certified power of attorney or authorization must be brought to collect the vehicle, if the vehicle is registered under a company',
+          'The vehicle\u2019s registration card (Mulkiya), or a possession write-off document'
+        ]},
       {t:'The authorization letter must be official and issued by the vehicle owner, and must include the following details:', key:true,
         sub:['Name','Emirates ID number','Vehicle plate number','Vehicle chassis number (VIN)'],
         sample:'Click here to see an example'},
       {t:'If you do not have an authorization letter or NOC, the vehicle owner must come in person to collect the vehicle.'},
-      {t:'You must pay the impound fees calculated by SAAED, in addition to any parking fines.'},
-      {t:'A fee of AED 100 per day is calculated during the first month from the vehicle\u2019s impound date, then AED 500 for each subsequent month, until the vehicle is released or sold at public auction.', key:true},
-      {t:'If you hold a company representative card, you may collect the vehicle if you are a representative of the same company the vehicle is registered under.'},
-      {t:'A payment link for the calculated impound fees will be sent to the customer by a SAAED staff member, while parking fines are paid through the Tam app or the Darb app using the traffic code.', key:true},
-      {t:'Some accepted documents:', sub:['Representative card','Trade license for company owners','Possession letter (if the vehicle is unregistered or has no plate)']},
-      {t:'If the vehicle\u2019s impound period exceeds six months, it will be referred to public auction in accordance with the procedures approved by the Department of Transport.'},
-      {t:'Example: if your fines total AED 8,000 and the vehicle sells at auction for AED 4,000, the remaining AED 4,000 stays registered against your name.', key:true},
-      {t:'The vehicle will be released to the owner or their legally authorized representative. The vehicle cannot be released unless one of the above requirements has been met.', key:true}
+      {t:'A payment link for the calculated impound and towing fees will be sent to the customer by a SAAED staff member.', key:true},
+      {t:'All parking fines registered against the vehicle must be paid, and are settled through the Tam app or the Darb app.', key:true},
+      {t:'Some documents required to collect vehicles registered under a company or organization:', sub:['Trade license for company owners','Possession letter (if the vehicle is unregistered or has no plate)']},
+      {t:'If the vehicle\u2019s impound period exceeds six months, it will be referred to public auction in accordance with the procedures approved by the Integrated Transport Centre.'},
+      {t:'The vehicle will be released to the owner or their legally authorized representative. The vehicle cannot be released unless one of the above requirements has been met.', key:true},
+      {t:'Additional documents required to collect vehicles with restrictions on them:', key:true,
+        groups:[
+          { label:'1. Passenger smuggling violation (Passenger Smuggling Committee decision)', sub:[
+            {t:'Clearance on the traffic code (if the vehicle is owned by an individual)', sample:'traffic_code'},
+            {t:'Clearance on the vehicle\u2019s violations (if the vehicle is owned by a company or organization)', sample:'violations'},
+            {t:'A release order from the police station', sample:'release_order'}
+          ]},
+          { label:'2. Diesel tankers', sub:[
+            {t:'Follow up with Musaffah Police Station (Major Ali Al Shamsi)'},
+            {t:'Clearance on the traffic code (if the vehicle is owned by an individual)', sample:'traffic_code'},
+            {t:'Clearance on the vehicle\u2019s violations (if the vehicle is owned by a company or organization)', sample:'violations'}
+          ]},
+          { label:'3. Water tankers', sub:[
+            {t:'Clearance from Ta\u2019qa Distribution Company', sample:'taqa'},
+            {t:'Clearance on the traffic code (if the vehicle is owned by an individual)', sample:'traffic_code'},
+            {t:'Clearance on the vehicle\u2019s violations (if the vehicle is owned by a company or organization)', sample:'violations'}
+          ]}
+        ]}
     ],
     yard_groups: [
       { title:'Musaffah Impound Yards', yards:[
@@ -116,22 +168,48 @@ ur: {
     modal_close:'بند کریں',
     back_btn:'واپس',
     footer_text:'© ساعد ٹریفک سسٹمز۔ جملہ حقوق محفوظ ہیں۔',
+    samples:{
+      authorization:{ title:'تفویض نامے کا نمونہ', note:'یہ صرف مطلوبہ تفویض نامے / عدم اعتراض خط کی شکل کی مثال ہے۔ تفصیلات کو اپنی گاڑی کی اصل معلومات سے تبدیل کریں۔', src:'images/authorization-sample.png' },
+      traffic_code:{ title:'ٹریفک کوڈ کلیئرنس کا نمونہ', note:'یہ صرف ٹریفک کوڈ کلیئرنس سرٹیفکیٹ کی شکل کی مثال ہے۔ تفصیلات کو اپنی گاڑی کی اصل معلومات سے تبدیل کریں۔', src:'images/clearance-traffic-code.png' },
+      violations:{ title:'گاڑی کی خلاف ورزیوں کے کلیئرنس کا نمونہ', note:'یہ صرف گاڑی کی خلاف ورزیوں کے کلیئرنس سرٹیفکیٹ کی شکل کی مثال ہے۔ تفصیلات کو اپنی گاڑی کی اصل معلومات سے تبدیل کریں۔', src:'images/clearance-violations.png' },
+      release_order:{ title:'پولیس اسٹیشن رہائی حکم نامے کا نمونہ', note:'یہ صرف پولیس اسٹیشن کی طرف سے جاری رہائی کے حکم نامے کی شکل کی مثال ہے۔ تفصیلات کو اپنی گاڑی کی اصل معلومات سے تبدیل کریں۔', src:'images/police-release-order.jpeg' },
+      taqa:{ title:'طاقہ ڈسٹری بیوشن کلیئرنس کا نمونہ', note:'یہ صرف طاقہ ڈسٹری بیوشن کی طرف سے جاری کلیئرنس لیٹر کی شکل کی مثال ہے۔ تفصیلات کو اپنی گاڑی کی اصل معلومات سے تبدیل کریں۔', src:'images/clearance-taqa.jpeg' }
+    },
     laws: [
-      {t:'اگر گاڑی ذاتی ملکیت میں ہے تو آپ کو یارڈ آ کر درج ذیل دستاویزات جمع کروانی ہوں گی:',
-        sub:['گاڑی کے مالک کے شناختی کارڈ یا ڈرائیونگ لائسنس کی کاپی','گاڑی کی ملکیت (ملکیہ)']},
-      {t:'اگر گاڑی کسی اور شخص یا ادارے کے نام پر رجسٹرڈ ہے تو گاڑی وصول کرنے کے لیے قانونی تفویض نامہ لانا لازمی ہے۔'},
+      {t:'گاڑی وصول کرنے کے لیے درکار دستاویزات:',
+        sub:[
+          'گاڑی کے مالک کی موجودگی',
+          'اگر گاڑی کسی فرد کے نام پر رجسٹرڈ ہے (مالک فرد ہے) تو گاڑی کے رجسٹرڈ مالک کے شناختی کارڈ یا ڈرائیونگ لائسنس کی کاپی',
+          'اگر گاڑی وصول کرنے والا شخص مالک نہیں ہے تو باقاعدہ تصدیق شدہ وکالت نامہ یا تفویض نامہ لانا لازمی ہے، اگر گاڑی کسی کمپنی کے نام پر ہے',
+          'گاڑی کی ملکیت (ملکیہ) یا قبضہ ختم کرنے کی دستاویز'
+        ]},
       {t:'تفویض نامہ گاڑی کے مالک کی طرف سے رسمی طور پر جاری کیا گیا ہونا چاہیے، اور اس میں درج ذیل تفصیلات شامل ہونی چاہئیں:', key:true,
         sub:['نام','شناختی کارڈ نمبر','گاڑی نمبر','گاڑی کا چیسس نمبر (VIN)'],
         sample:'مثال دیکھنے کے لیے یہاں دبائیں'},
       {t:'اگر آپ کے پاس تفویض نامہ یا عدم اعتراض کا خط نہیں ہے تو گاڑی کے مالک کو خود آ کر گاڑی وصول کرنی ہوگی۔'},
-      {t:'ساعد کی طرف سے احتساب کی گئی یارڈ فیس ادا کرنا لازمی ہے، اس کے علاوہ پارکنگ کے تمام جرمانے بھی۔'},
-      {t:'گاڑی کے یارڈ میں آنے کی تاریخ سے پہلے مہینے کے دوران روزانہ 100 درہم فیس شمار کی جاتی ہے، اس کے بعد ہر اگلے مہینے 500 درہم — جب تک گاڑی چھڑائی نہ جائے یا نیلامی میں فروخت نہ ہو جائے۔', key:true},
-      {t:'اگر آپ کے پاس نمائندہ کارڈ ہے تو آپ گاڑی وصول کر سکتے ہیں بشرطیکہ آپ اسی کمپنی کے نمائندے ہوں جس کے نام پر گاڑی رجسٹرڈ ہے۔'},
-      {t:'احتساب شدہ یارڈ فیس کی ادائیگی کے لیے ساعد کا عملہ گاہک کو پیمنٹ لنک بھیجے گا، جبکہ پارکنگ کی خلاف ورزیاں ٹریفک کوڈ کے ذریعے تم (Tam) ایپ یا درب (Darb) ایپ سے ادا کی جائیں گی۔', key:true},
-      {t:'کچھ قابلِ قبول دستاویزات:', sub:['نمائندہ کارڈ','کمپنی مالکان کے لیے تجارتی لائسنس','قبضہ نامہ (اگر گاڑی غیر رجسٹرڈ ہے یا نمبر پلیٹ نہیں ہے)']},
-      {t:'اگر گاڑی کے یارڈ میں رہنے کی مدت چھ مہینے سے تجاوز کر جائے تو اسے ڈیپارٹمنٹ آف ٹرانسپورٹ کے منظور شدہ طریقہ کار کے مطابق عوامی نیلامی کے لیے بھیج دیا جائے گا۔'},
-      {t:'مثال: اگر جرمانوں کی رقم 8,000 درہم ہو اور گاڑی نیلامی میں 4,000 درہم میں فروخت ہو جائے تو باقی ماندہ 4,000 درہم اب بھی آپ کے نام درج رہیں گے۔', key:true},
-      {t:'گاڑی صرف مالک یا اس کے قانونی نمائندے کے حوالے کی جائے گی۔ مذکورہ بالا شرائط میں سے کم از کم ایک شرط پوری کیے بغیر گاڑی وصول نہیں کی جا سکتی۔', key:true}
+      {t:'احتساب شدہ یارڈ فیس اور ٹوئنگ فیس کی ادائیگی کے لیے ساعد کا عملہ گاہک کو پیمنٹ لنک بھیجے گا۔', key:true},
+      {t:'گاڑی پر درج پارکنگ کی تمام خلاف ورزیاں ادا کرنا لازمی ہے، جو تم (Tam) ایپ یا درب (Darb) ایپ کے ذریعے ادا کی جاتی ہیں۔', key:true},
+      {t:'کمپنی یا ادارے کے نام پر رجسٹرڈ گاڑیاں وصول کرنے کے لیے درکار کچھ دستاویزات:', sub:['کمپنی مالکان کے لیے تجارتی لائسنس','قبضہ نامہ (اگر گاڑی غیر رجسٹرڈ ہے یا نمبر پلیٹ نہیں ہے)']},
+      {t:'اگر گاڑی کے یارڈ میں رہنے کی مدت چھ مہینے سے تجاوز کر جائے تو اسے مرکز انٹیگریٹڈ ٹرانسپورٹ کے منظور شدہ طریقہ کار کے مطابق عوامی نیلامی کے لیے بھیج دیا جائے گا۔'},
+      {t:'گاڑی صرف مالک یا اس کے قانونی نمائندے کے حوالے کی جائے گی۔ مذکورہ بالا شرائط میں سے کم از کم ایک شرط پوری کیے بغیر گاڑی وصول نہیں کی جا سکتی۔', key:true},
+      {t:'ایسی گاڑیاں جن پر پابندیاں عائد ہوں، انہیں وصول کرنے کے لیے درکار اضافی دستاویزات:', key:true,
+        groups:[
+          { label:'1. مسافر اسمگلنگ کی خلاف ورزی (مسافر اسمگلنگ کمیٹی کا فیصلہ)', sub:[
+            {t:'ٹریفک کوڈ پر عدم واجبات کا سرٹیفکیٹ (اگر گاڑی کسی فرد کی ملکیت ہے)', sample:'traffic_code'},
+            {t:'گاڑی کی خلاف ورزیوں پر عدم واجبات کا سرٹیفکیٹ (اگر گاڑی کسی کمپنی یا ادارے کی ملکیت ہے)', sample:'violations'},
+            {t:'پولیس اسٹیشن سے رہائی کا حکم نامہ', sample:'release_order'}
+          ]},
+          { label:'2. ڈیزل ٹینکرز', sub:[
+            {t:'مصفح پولیس اسٹیشن سے رجوع کریں (میجر علی الشامسی)'},
+            {t:'ٹریفک کوڈ پر عدم واجبات کا سرٹیفکیٹ (اگر گاڑی کسی فرد کی ملکیت ہے)', sample:'traffic_code'},
+            {t:'گاڑی کی خلاف ورزیوں پر عدم واجبات کا سرٹیفکیٹ (اگر گاڑی کسی کمپنی یا ادارے کی ملکیت ہے)', sample:'violations'}
+          ]},
+          { label:'3. پانی کے ٹینکرز', sub:[
+            {t:'طاقہ ڈسٹری بیوشن کمپنی سے عدم واجبات کا سرٹیفکیٹ', sample:'taqa'},
+            {t:'ٹریفک کوڈ پر عدم واجبات کا سرٹیفکیٹ (اگر گاڑی کسی فرد کی ملکیت ہے)', sample:'traffic_code'},
+            {t:'گاڑی کی خلاف ورزیوں پر عدم واجبات کا سرٹیفکیٹ (اگر گاڑی کسی کمپنی یا ادارے کی ملکیت ہے)', sample:'violations'}
+          ]}
+        ]}
     ],
     yard_groups: [
       { title:'مصفح یارڈز', yards:[
@@ -160,10 +238,20 @@ function renderLaws(lang){
   const list = document.getElementById('law-list');
   list.innerHTML = d.laws.map((law, i)=>{
     const sub = law.sub ? '<ul class="law-sub">' + law.sub.map(s=>'<li>'+s+'</li>').join('') + '</ul>' : '';
-    const sample = law.sample ? '<button class="sample-link" onclick="openModal()">' + cameraIcon + '<span>' + law.sample + '</span></button>' : '';
+    const sample = law.sample ? '<button class="sample-link" onclick="openModal(\'authorization\')">' + cameraIcon + '<span>' + law.sample + '</span></button>' : '';
+    const groups = law.groups ? '<div class="law-groups">' + law.groups.map(g=>
+      '<div class="law-subgroup">' +
+        '<p class="law-subgroup-label">' + g.label + '</p>' +
+        '<ul class="law-sub">' + g.sub.map(item=>{
+          if (typeof item === 'string') return '<li>' + item + '</li>';
+          const btn = item.sample ? '<button class="li-sample-btn" onclick="openModal(\'' + item.sample + '\')" aria-label="view example">' + cameraIcon + '</button>' : '';
+          return '<li' + (item.sample ? ' class="has-sample"' : '') + '><span>' + item.t + '</span>' + btn + '</li>';
+        }).join('') + '</ul>' +
+      '</div>'
+    ).join('') + '</div>' : '';
     return '<div class="law-item' + (law.key ? ' key' : '') + '">' +
       '<div class="law-num">' + (i+1) + '</div>' +
-      '<div class="law-body"><p>' + law.t + '</p>' + sub + sample + '</div>' +
+      '<div class="law-body"><p>' + law.t + '</p>' + sub + sample + groups + '</div>' +
     '</div>';
   }).join('');
 }
@@ -187,7 +275,10 @@ function renderYards(lang){
   }).join('');
 }
 
+let currentLang = 'ar';
+
 function applyLang(lang){
+  currentLang = lang;
   const d = dict[lang];
   document.documentElement.lang = lang;
   document.documentElement.dir = d.dir;
@@ -239,5 +330,12 @@ window.addEventListener('popstate', (e)=>{
 // ensure initial state is the gate
 history.replaceState({ view:'gate' }, '', '#');
 
-function openModal(){ document.getElementById('modal-overlay').classList.add('open'); }
+function openModal(key){
+  const s = dict[currentLang].samples[key];
+  if (!s) return;
+  document.getElementById('modal-img').src = s.src;
+  document.getElementById('modal-title').textContent = s.title;
+  document.getElementById('modal-note').textContent = s.note;
+  document.getElementById('modal-overlay').classList.add('open');
+}
 function closeModal(){ document.getElementById('modal-overlay').classList.remove('open'); }
